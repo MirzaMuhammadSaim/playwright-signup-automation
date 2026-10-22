@@ -1,0 +1,33 @@
+﻿No,Category,Test Case,Status,Time (s)
+1,UI / Positive,Login page elements visible,PASS,6.11
+2,UI / Positive,Login page placeholders,PASS,3.39
+3,UI / Positive,Password is masked by default,PASS,3.22
+4,UI / Positive,Password visibility toggle,PASS,3.54
+5,UI / Positive,Forgot password link navigates,PASS,3.38
+6,UI / Positive,Administrator portal heading visible,PASS,3.33
+7,Positive (Login),Login with valid credentials,PASS,6.2
+8,Positive (Login),Login by pressing enter,PASS,5.36
+9,Positive (Login),Login email is case insensitive,PASS,5.61
+10,Negative,Login wrong password,PASS,5.32
+11,Negative,Login wrong email,PASS,3.5
+12,Negative,Login both wrong,PASS,3.61
+13,Negative,Login empty fields,PASS,2.64
+14,Negative,Login empty email only,PASS,2.22
+15,Negative,Login empty password only,PASS,2.21
+16,Negative,Login invalid email format [plainaddress],PASS,2.34
+17,Negative,Login invalid email format [missing-at-sign.com],PASS,2.07
+18,Negative,Login invalid email format [@no-local-part.com],PASS,2.3
+19,Negative,Login invalid email format [user@],PASS,2.27
+20,Negative,Login invalid email format [user@@example.com],PASS,1.93
+21,Negative,Login invalid email format [user name@example.com],PASS,2.33
+22,Negative,Login injection payload in password [' OR '1'='1],PASS,4
+23,Negative,Login injection payload in password [admin'--],PASS,4.2
+24,Negative,Login injection payload in password [<script>alert(1)</script>],PASS,4.45
+25,Negative,"Login injection payload in password ["" OR """"=""]",PASS,4.71
+26,Negative,Login sql injection in email is rejected,PASS,3.33
+27,Negative,Login very long inputs,PASS,3.26
+28,Negative,Login password too short,PASS,3.35
+29,Negative,Login whitespace only password,PASS,3.27
+30,Negative,Password not exposed in url,PASS,4.88
+31,Negative,Error message does not reveal which field is wrong,PASS,4.65
+32,Negative,Protected page requires login,PASS,3.37
